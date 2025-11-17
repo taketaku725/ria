@@ -67,6 +67,12 @@ p {
   border-color: #4db3e6;
 }
 
+
+img {
+width: 96px;
+height: auto;
+}
+
 /* ボタン */
 .nazoform button[type="submit"] {
   flex: 0 0 auto;
