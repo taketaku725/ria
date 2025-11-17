@@ -1,4 +1,6 @@
-/* 全体の基本設定（モバイルファースト） */
+/* =========================
+   基本設定（モバイルファースト）
+   ========================= */
 *,
 *::before,
 *::after {
@@ -10,16 +12,17 @@ body {
   padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-  background: #f8f5ff;
-  color: #333;
+  background: #e8f8ff; /* 淡い水色 */
+  color: #222;
   line-height: 1.6;
 }
 
-/* タイトル・説明文 */
+/* 見出し・説明 */
 h1 {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 0 1rem;
+  color: #0b6fa4;
 }
 
 p {
@@ -27,16 +30,21 @@ p {
   margin: 0 auto 1.5rem;
   text-align: center;
   font-size: 0.95rem;
+  color: #0b4b70;
 }
 
-/* 謎入力フォームの枠 */
+/* フォーム全体 */
 .nazoform {
   width: 100%;
   max-width: 480px;
   margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* 入力欄＋ボタンの並び（基本は横並び） */
+/* フォームの画面レイアウト（基本は横並び） */
 .nazoform form {
   display: flex;
   justify-content: center;
@@ -44,71 +52,59 @@ p {
   gap: 0.5rem;
 }
 
-/* テキスト入力 */
+/* 入力欄 */
 .nazoform input[type="text"] {
   flex: 1 1 auto;
   padding: 0.7rem 0.8rem;
   font-size: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  border: 2px solid #8cd2f5;
   outline: none;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
-.nazoform input[type="text"]::placeholder {
-  color: #aaa;
+.nazoform input[type="text"]:focus {
+  border-color: #4db3e6;
 }
 
-/* 送信ボタン */
+/* ボタン */
 .nazoform button[type="submit"] {
   flex: 0 0 auto;
   padding: 0.7rem 1.4rem;
   font-size: 0.95rem;
   border: none;
   border-radius: 0.5rem;
-  background: #ff7fbf;
-  color: #fff;
+  background: #4db3e6; /* メイン水色 */
+  color: #ffffff;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
   letter-spacing: 0.1em;
+  transition: transform .15s ease, background .2s ease;
 }
 
-/* タップ時のフィードバック */
+.nazoform button[type="submit"]:hover {
+  background: #34a0d6;
+}
+
 .nazoform button[type="submit"]:active {
-  transform: translateY(1px);
-  box-shadow: none;
-  opacity: 0.9;
+  transform: translateY(2px);
 }
 
 /* 判定メッセージ */
 .nazoform .result {
   margin-top: 0.75rem;
-  min-height: 1.4em; /* メッセージがまだ出てない時もレイアウトが安定するように */
+  min-height: 1.4em;
   font-size: 0.9rem;
   text-align: center;
-  color: #c0392b;
+  color: #c0392b; /* エラーは赤のままが識別◎ */
 }
 
-/* =========================
-   スマホ向け細かい調整
-   ========================= */
+/* ----------- スマホ向け ----------- */
 @media (max-width: 480px) {
-  body {
-    padding: 12px;
-  }
+  body { padding: 12px; }
 
-  h1 {
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-  }
+  h1 { font-size: 1.35rem; }
 
-  p {
-    font-size: 0.9rem;
-    margin-bottom: 1.25rem;
-  }
-
-  /* 画面が狭いときは縦並びにして押しやすくする */
   .nazoform form {
     flex-direction: column;
     align-items: stretch;
@@ -119,21 +115,13 @@ p {
   }
 }
 
-/* =========================
-   タブレット〜PC向けの調整
-   ========================= */
+/* ----------- タブレット/PC ----------- */
 @media (min-width: 768px) {
-  body {
-    padding-top: 40px;
-  }
+  body { padding-top: 40px; }
 
-  h1 {
-    font-size: 2rem;
-  }
+  h1 { font-size: 2rem; }
 
-  p {
-    font-size: 1rem;
-  }
+  p { font-size: 1rem; }
 
   .nazoform {
     margin-top: 2.5rem;
