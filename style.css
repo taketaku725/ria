@@ -25,6 +25,13 @@ h1 {
   color: #0b6fa4;
 }
 
+h3 {
+   font-size: 1.2rem;
+   text-align: center;
+   margin: 0 0 1rem;
+   color: #0b6fa4;
+}
+
 p {
   max-width: 640px;
   margin: 0 auto 1.5rem;
@@ -33,15 +40,25 @@ p {
   color: #0b4b70;
 }
 
+.attention {
+   width: 100%;
+   max-width: 480px;
+   margin: 2rem auto;
+   padding: 1.5rem;
+   background: #ffffff;
+   border-radius: 1rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
 /* フォーム全体 */
 .nazoform {
-  width: 100%;
-  max-width: 480px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+   width: 100%;
+   max-width: 480px;
+   margin: 2rem auto;
+   padding: 1.5rem;
+   background: #ffffff;
+   border-radius: 1rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* フォームの画面レイアウト（基本は横並び） */
