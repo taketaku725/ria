@@ -35,9 +35,15 @@ h3 {
 p {
   max-width: 640px;
   margin: 0 auto 1.5rem;
-  text-align: center;
   font-size: 0.95rem;
   color: #0b4b70;
+}
+
+li {
+   max-width: 640px;
+   margin: 0 auto 1.5rem;
+   font-size: 0.95rem;
+   color: #0b4b70;
 }
 
 .attention {
