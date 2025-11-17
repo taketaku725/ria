@@ -1,0 +1,4 @@
+{
+  "type": "move",
+  "value": "./congratulations.html"
+}
