@@ -86,8 +86,9 @@ p {
 
 
 img {
-width: 90%;
-height: auto;
+   width: 90%;
+   margin: auto;
+   display: block;
 }
 
 /* ボタン */
