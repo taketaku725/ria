@@ -1,3 +1,23 @@
+let clickCount = 0;
+const imgRi = document.getElementById("imgRi");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+imgRi.addEventListener("click", () => {
+  clickCount++;
+  console.log("クリック数:", clickCount);
+
+  if (clickCount >= 5) {
+    popup.style.display = "flex";
+  }
+});
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+  clickCount = 0;
+});
+
+
 function AnswerCheck(form){
   try{
     // 連打を防止するために、送信ボタンを無効化する
