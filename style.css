@@ -136,13 +136,16 @@ img {
 }
 
 .img-box {
-  width: 200px;      /* 正方形画像として表示 */
-  height: 200px;
+  width: 40vw;          /* 画面幅の40%を基準に可変 */
+  max-width: 200px;     /* PCでは大きくなりすぎないように最大200px */
+  aspect-ratio: 1;      /* 正方形を維持 */
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 50%;   /* 正円 */
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 4px solid #4db3e6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+
 
 .arrow {
   font-size: 40px;
