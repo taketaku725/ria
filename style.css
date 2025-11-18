@@ -130,10 +130,11 @@ img {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  gap: 4vw;   /* 画面幅に応じて柔軟に */
-  justify-content: center;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   gap: 4vw;   /* 画面幅に応じて柔軟に */
+   justify-content: center;
 }
 
 .img-box {
