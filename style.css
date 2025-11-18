@@ -132,7 +132,8 @@ img {
 .container {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 4vw;   /* 画面幅に応じて柔軟に */
+  justify-content: center;
 }
 
 .img-box {
@@ -146,9 +147,9 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-
 .arrow {
-  font-size: 40px;
+  font-size: 8vw;
+  max-font-size: 40px;
   font-weight: bold;
   color: #0b6fa4;
 }
