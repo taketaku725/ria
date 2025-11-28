@@ -21,9 +21,10 @@ footer {
    width: 100%;
    height: 60px;
    text-align: center;
-   padding: 25px 0;
+   padding: 15px 0;
    margin: 0;
    background: #9ac3d5;
+   color: white;
 }
 
 .footer-text {
