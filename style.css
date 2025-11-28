@@ -101,6 +101,12 @@ img {
    display: block;
 }
 
+video {
+   width: 90%;
+   margin: 1rem auto;
+   display: block;
+}
+
 /* ボタン */
 .nazoform button[type="submit"] {
   flex: 0 0 auto;
