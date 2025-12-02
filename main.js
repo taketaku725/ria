@@ -3,7 +3,7 @@ const imgRi = document.getElementById("imgRi");
 const popup = document.getElementById("popup");
 const closeBtn = document.getElementById("closeBtn");
 
-imgRi.addEventListener('click', () => {
+imgRi.addEventListener('click', function() {
   clickCount++;
   console.log("クリック数:", clickCount);
 
