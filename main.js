@@ -1,9 +1,9 @@
 let clickCount = 0;
-const imgRi = document.getElementById("imgRi");
-const popup = document.getElementById("popup");
-const closeBtn = document.getElementById("closeBtn");
+const imgRi = document.getElementById('imgRi');
+const popup = document.getElementById('popup');
+const closeBtn = document.getElementById('closeBtn');
 
-imgRi.addEventListener("click", () => {
+imgRi.addEventListener('click', () => {
   clickCount++;
   console.log("クリック数:", clickCount);
 
@@ -12,7 +12,7 @@ imgRi.addEventListener("click", () => {
   }
 });
 
-closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener('click', () => {
   popup.style.display = "none";
   clickCount = 0;
 });
