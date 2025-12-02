@@ -1,7 +1,7 @@
 let clickCount = 0;
-const imgRi = document.getElementById('imgRi');
-const popup = document.getElementById('popup');
-const closeBtn = document.getElementById('closeBtn');
+const imgRi = document.getElementById("imgRi");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
 
 imgRi.addEventListener('click', () => {
   clickCount++;
