@@ -169,7 +169,7 @@ video {
 }
 
 .img-box {
-  width: 40vw;          /* 画面幅の40%を基準に可変 */
+  width: 30vw;          /* 画面幅の40%を基準に可変 */
   max-width: 200px;     /* PCでは大きくなりすぎないように最大200px */
   aspect-ratio: 1;      /* 正方形を維持 */
   object-fit: cover;
